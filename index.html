@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autobuff & Autoclicker By matgott</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background: red;
+        background-blend-mode: lighten;
+        background-image: url("./images/background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 220ms ease-in-out;
+      }
+
+      body.effect {
+        background-blend-mode: difference;
+      }
+
+      /* body::after {
+        content: "";
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: red;
+        background-blend-mode: ;
+      } */
+
+      h1 {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 50px;
+        transition: all 220ms ease-in-out;
+      }
+
+      body.effect h1 {
+        transform: scale(2);
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Coming soon!</h1>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const body = document.querySelector("body");
+        setInterval(() => {
+          body.classList.add("effect");
+
+          setTimeout(() => {
+            body.classList.remove("effect");
+          }, 50);
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>

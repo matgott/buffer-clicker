@@ -1,0 +1,26 @@
+class Theme:
+    WINDOW_WIDTH = 600  # pixels
+    WINDOW_HEIGHT = 450  # pixels
+    COLUMN_WIDTH = 370
+    COLUMN_HEIGHT = 360
+    PIXEL_CHARACTER_FACTOR = 8
+
+    MAIN_BACKGROUND = "#1a1a2e"
+    SECONDARY_BACKGROUND = "#23233e"
+
+    CUSTOMIZABLE_FONT = "Arial {size} {style}"
+    HEADINGS_FONT = "Arial 14 bold"
+    HEADINGS_COLOR = "#e94560"
+    TEXT_FONT = "Arial 11"
+    TEXT_COLOR = "#f6f6f6"
+
+    BUTTON_COLOR = "#1a1a2e"
+    BUTTON_BACKGROUND = "#45e97c"
+
+    BUTTON_INFO_COLOR = "#1a1a2e"
+    BUTTON_INFO_BACKGROUND = "#4560e9"
+
+    BUTTON_ERROR_COLOR = "#1a1a2e"
+    BUTTON_ERROR_BACKGROUND = "#e94560"
+
+    ELEMENT_PADDING = 10
