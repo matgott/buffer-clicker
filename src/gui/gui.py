@@ -249,7 +249,7 @@ class Gui:
                 clicker_thread = multiprocessing.Process(
                     target=clicker_thread_function, args=(args,))
                 clicker_thread.start()
-                self.active_threads
+                self.active_threads.append(clicker_thread)
 
             self.main_window[event].Update(self.LANG.STOP, button_color=(
                 self.THEME.BUTTON_INFO_COLOR, self.THEME.BUTTON_INFO_BACKGROUND))
